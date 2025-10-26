@@ -1,0 +1,13 @@
+__pycache__/
+.venv/
+docs/
+venv/
+output/
+
+*.pyc
+*.pyo
+
+*.wav
+*.mp3
+
+.env

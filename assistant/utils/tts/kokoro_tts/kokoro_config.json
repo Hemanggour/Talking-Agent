@@ -1,0 +1,117 @@
+{
+    "repo_id": "hexgrad/Kokoro-82M",
+    "defaults": {
+        "language_code": "a",
+        "voice": "am_adam"
+    },
+    "languages": {
+        "a": {
+            "name": "American English",
+            "voices": [
+                "af_heart",
+                "af_alloy",
+                "af_aoede",
+                "af_bella",
+                "af_jessica",
+                "af_kore",
+                "af_nicole",
+                "af_nova",
+                "af_river",
+                "af_sarah",
+                "af_sky",
+                "am_adam",
+                "am_echo",
+                "am_eric",
+                "am_fenrir",
+                "am_liam",
+                "am_michael",
+                "am_onyx",
+                "am_puck",
+                "am_santa"
+            ],
+            "default_voice": "am_adam"
+        },
+        "b": {
+            "name": "British English",
+            "voices": [
+                "bf_alice",
+                "bf_emma",
+                "bf_isabella",
+                "bf_lily",
+                "bm_daniel",
+                "bm_fable",
+                "bm_george",
+                "bm_lewis"
+            ],
+            "default_voice": "bm_daniel"
+        },
+        "j": {
+            "name": "Japanese",
+            "voices": [
+                "jf_alpha",
+                "jf_gongitsune",
+                "jf_nezumi",
+                "jf_tebukuro",
+                "jm_kumo"
+            ],
+            "default_voice": "jm_kumo"
+        },
+        "z": {
+            "name": "Mandarin Chinese",
+            "voices": [
+                "zf_xiaobei",
+                "zf_xiaoni",
+                "zf_xiaoxiao",
+                "zf_xiaoyi",
+                "zm_yunjian",
+                "zm_yunxi",
+                "zm_yunxia",
+                "zm_yunyang"
+            ],
+            "default_voice": "zm_yunxi"
+        },
+        "e": {
+            "name": "Spanish",
+            "voices": [
+                "ef_dora",
+                "em_alex",
+                "em_santa"
+            ],
+            "default_voice": "em_alex"
+        },
+        "f": {
+            "name": "French",
+            "voices": [
+                "ff_siwis"
+            ],
+            "default_voice": "ff_siwis"
+        },
+        "h": {
+            "name": "Hindi",
+            "voices": [
+                "hf_alpha",
+                "hf_beta",
+                "hm_omega",
+                "hm_psi"
+            ],
+            "default_voice": "hm_psi"
+        },
+        "i": {
+            "name": "Italian",
+            "voices": [
+                "if_sara",
+                "im_nicola"
+            ],
+            "default_voice": "im_nicola"
+        },
+        "p": {
+            "name": "Brazilian Portuguese",
+            "voices": [
+                "pf_dora",
+                "pm_alex",
+                "pm_santa"
+            ],
+            "default_voice": "pm_alex"
+        }
+    }
+}
