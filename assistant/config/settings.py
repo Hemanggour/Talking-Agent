@@ -1,5 +1,6 @@
-import os
 import json
+import os
+
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -10,9 +11,13 @@ class Settings:
         self.WHISPER_MODEL = os.getenv("WHISPER_MODEL", "tiny")
 
         self.LANGUAGE_MODEL = os.getenv("LANGUAGE_MODEL", "gemini-2.0-flash")
-        self.LANGUAGE_MODEL_PROVIDER = os.getenv("LANGUAGE_MODEL_PROVIDER", "google_genai")
+        self.LANGUAGE_MODEL_PROVIDER = os.getenv(
+            "LANGUAGE_MODEL_PROVIDER", "google_genai"
+        )
 
-        self.KOKORO_MODEL_CONFIG = self.load_model_config(f"./assistant/utils/tts/kokoro_tts/kokoro_config.json")
+        self.KOKORO_MODEL_CONFIG = self.load_model_config(
+            "./assistant/utils/tts/kokoro_tts/kokoro_config.json"
+        )
         # self.DEFAULT_VOICE = self.KOKORO_MODEL_CONFIG.get("defaults").get("voice")
         self.DEFAULT_VOICE = "af_kore"
         self.DEFAULT_OUTPUT_DIR = f"./output/kokoro/{self.DEFAULT_VOICE}"

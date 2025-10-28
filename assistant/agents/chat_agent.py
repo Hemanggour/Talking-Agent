@@ -1,10 +1,12 @@
 import uuid
+
+from langchain.chat_models import init_chat_model
+from langchain_core.messages import HumanMessage, SystemMessage
 from langgraph.checkpoint.memory import MemorySaver
 from langgraph.graph import START, MessagesState, StateGraph
-from langchain_core.messages import HumanMessage, SystemMessage
-from langchain.chat_models import init_chat_model
-from assistant.core.agent_base import AgentBase
+
 from assistant.config.settings import settings
+from assistant.core.agent_base import AgentBase
 from assistant.utils.prompts.system_prompts import CHAT_AGENT_PROMPT
 
 
@@ -34,10 +36,12 @@ class ChatAgent(AgentBase):
     def invoke(self, query: str):
         input_messages = [
             SystemMessage(content=CHAT_AGENT_PROMPT),
-            HumanMessage(content=query)
+            HumanMessage(content=query),
         ]
 
-        for event in self.app.stream({"messages": input_messages}, self.config, stream_mode="values"):
+        for event in self.app.stream(
+            {"messages": input_messages}, self.config, stream_mode="values"
+        ):
 
             response = event["messages"][-1]
 

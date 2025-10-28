@@ -11,3 +11,5 @@ output/
 *.mp3
 
 .env
+
+qa.bat
