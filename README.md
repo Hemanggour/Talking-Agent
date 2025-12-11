@@ -1,4 +1,4 @@
-# M-AI: Multimodal AI Assistant
+# Talking-Agent: Multimodal AI Assistant
 
 A sophisticated conversational AI assistant that combines multiple AI services to create an interactive dialogue experience. The system leverages speech-to-text (STT), large language models (LLM), and text-to-speech (TTS) to enable natural voice-based conversations with an intelligent, personality-driven assistant.
 
