@@ -1,10 +1,10 @@
 from assistant.agents.chat_agent import ChatAgent
 from assistant.utils.audio import record_audio
 from assistant.utils.stt.whisper_stt import WhisperSTT
-from assistant.utils.tts.kokoro_tts import KokoroTTS
+from assistant.utils.tts.gemini_tts import GeminiTTS
 
 chat_agent = ChatAgent()
-tts_model = KokoroTTS()
+tts_model = GeminiTTS()
 stt_model = WhisperSTT()
 
 audio, _ = record_audio(duration=5)
